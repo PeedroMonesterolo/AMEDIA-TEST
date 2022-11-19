@@ -1,0 +1,82 @@
+<h1 mat-dialog-title>{{ data.title }}</h1>
+<div mat-dialog-content>
+  <form [formGroup]="user" class="row">
+    <!-- NOMBRE -->
+    <div class="col-6 mb-3">
+      <mat-form-field class="w-100" appearance="fill">
+        <mat-label>Nombre</mat-label>
+        <input required type="text" matInput formControlName="nombre" (keypress)="soloLetras($event)">
+        <mat-error *ngIf="user.controls['nombre'].hasError('required')">
+          <p ngxError="required">El nombre es requerido</p>
+        </mat-error>
+        <mat-error class="mb-3" *ngIf="user.controls['nombre'].hasError('maxlength')">
+          <p ngxError="required">Se paso la cantidad de caracteres admitidos</p>
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+    <!-- APELLIDO -->
+    <div class="col-6 mb-3">
+      <mat-form-field class="w-100" appearance="fill">
+        <mat-label>Apellido</mat-label>
+        <input required type="text" matInput formControlName="apellido" (keypress)="soloLetras($event)">
+        <mat-error ngxErrors="user.apellido">
+          <p ngxError="required">El apellido es requerido</p>
+        </mat-error>
+        <mat-error class="mb-3" *ngIf="user.controls['apellido'].hasError('maxlength')">
+          <p ngxError="required">Se paso la cantidad de caracteres admitidos</p>
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+    <!-- EMAIL -->
+    <div class="col-12 mb-3">
+      <mat-form-field class="w-100" appearance="fill">
+        <mat-label>Correo electronico</mat-label>
+        <input required type="email" matInput formControlName="email">
+        <mat-error ngxErrors="user.email">
+          <p ngxError="required">El Correo electronico es requerido</p>
+        </mat-error>
+        <mat-error class="mb-3" *ngIf="user.controls['email'].hasError('maxlength')">
+          <p ngxError="required">Se paso la cantidad de caracteres admitidos</p>
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+    <!-- Contraseña -->
+    <div class="col-12 mb-3">
+      <mat-form-field class="w-100" appearance="fill">
+        <mat-label>Contraseña</mat-label>
+        <input required type="password" matInput formControlName="password">
+        <mat-error ngxErrors="user.password">
+          <p ngxError="required">La contraseña es requerido</p>
+        </mat-error>
+        <mat-error class="mb-3" *ngIf="user.controls['password'].hasError('minlength')">
+            <p ngxError="required">Debe contener mas de 10 caracteres la Contraseña</p>
+          </mat-error>
+        <mat-error class="mb-3" *ngIf="user.controls['password'].hasError('maxlength')">
+          <p ngxError="required">Se paso la cantidad de caracteres admitidos(20)</p>
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+
+    <!-- TIPO USUARIO -->
+    <div class="col-12 mb-3">
+      <mat-form-field class="w-100" appearance="fill">
+        <mat-label>Tipo de usuario</mat-label>
+        <mat-select required formControlName="idTipo">
+          <mat-option *ngFor="let item of this.tipoUsuario" [value]="item.idTipo">{{ item.tipoDesc }}</mat-option>
+        </mat-select>
+        <mat-error ngxErrors="user.idTipo">
+          <p ngxError="required">La Tipo de usuario es requerido</p>
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+  </form>
+</div>
+<div mat-dialog-actions align="end">
+  <button mat-button (click)="save()" color="primary" [disabled]="this.user.invalid" cdkFocusInitial>Guardar</button>
+  <button mat-button color="warn" [mat-dialog-close]="null">Cancelar</button>
+</div>

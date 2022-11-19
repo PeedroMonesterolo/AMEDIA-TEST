@@ -1,0 +1,17 @@
+C:\Users\Pedro\Desktop\TestCrud\TestCrud\Amedia.INFRASTRUCTURE\bin\Debug\net6.0\Amedia.INFRASTRUCTURE.deps.json
+C:\Users\Pedro\Desktop\TestCrud\TestCrud\Amedia.INFRASTRUCTURE\bin\Debug\net6.0\Amedia.INFRASTRUCTURE.dll
+C:\Users\Pedro\Desktop\TestCrud\TestCrud\Amedia.INFRASTRUCTURE\bin\Debug\net6.0\Amedia.INFRASTRUCTURE.pdb
+C:\Users\Pedro\Desktop\TestCrud\TestCrud\Amedia.INFRASTRUCTURE\obj\Debug\net6.0\Amedia.INFRASTRUCTURE.csproj.AssemblyReference.cache
+C:\Users\Pedro\Desktop\TestCrud\TestCrud\Amedia.INFRASTRUCTURE\obj\Debug\net6.0\Amedia.INFRASTRUCTURE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pedro\Desktop\TestCrud\TestCrud\Amedia.INFRASTRUCTURE\obj\Debug\net6.0\Amedia.INFRASTRUCTURE.AssemblyInfoInputs.cache
+C:\Users\Pedro\Desktop\TestCrud\TestCrud\Amedia.INFRASTRUCTURE\obj\Debug\net6.0\Amedia.INFRASTRUCTURE.AssemblyInfo.cs
+C:\Users\Pedro\Desktop\TestCrud\TestCrud\Amedia.INFRASTRUCTURE\obj\Debug\net6.0\Amedia.INFRASTRUCTURE.csproj.CoreCompileInputs.cache
+C:\Users\Pedro\Desktop\TestCrud\TestCrud\Amedia.INFRASTRUCTURE\obj\Debug\net6.0\Amedia.INFRASTRUCTURE.dll
+C:\Users\Pedro\Desktop\TestCrud\TestCrud\Amedia.INFRASTRUCTURE\obj\Debug\net6.0\refint\Amedia.INFRASTRUCTURE.dll
+C:\Users\Pedro\Desktop\TestCrud\TestCrud\Amedia.INFRASTRUCTURE\obj\Debug\net6.0\Amedia.INFRASTRUCTURE.pdb
+C:\Users\Pedro\Desktop\TestCrud\TestCrud\Amedia.INFRASTRUCTURE\obj\Debug\net6.0\ref\Amedia.INFRASTRUCTURE.dll
+C:\Users\Pedro\Desktop\TestCrud\TestCrud\Amedia.INFRASTRUCTURE\bin\Debug\net6.0\Amedia.INFRASTRUCTURE.runtimeconfig.json
+C:\Users\Pedro\Desktop\TestCrud\TestCrud\Amedia.INFRASTRUCTURE\bin\Debug\net6.0\Amedia.CORE.dll
+C:\Users\Pedro\Desktop\TestCrud\TestCrud\Amedia.INFRASTRUCTURE\bin\Debug\net6.0\Amedia.CORE.pdb
+C:\Users\Pedro\Desktop\TestCrud\TestCrud\Amedia.INFRASTRUCTURE\obj\Debug\net6.0\Amedia.INFRASTRUCTURE.csproj.CopyComplete
+C:\Users\Pedro\Desktop\TestCrud\TestCrud\Amedia.INFRASTRUCTURE\obj\Debug\net6.0\Amedia.INFRASTRUCTURE.genruntimeconfig.cache

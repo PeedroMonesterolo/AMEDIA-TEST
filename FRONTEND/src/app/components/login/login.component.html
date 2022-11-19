@@ -1,0 +1,38 @@
+<div class="row p-5 mt-5">
+  <h2>Iniciar sesion</h2>
+  <form [formGroup]="login">
+    <div class="col-12 mb-3">
+      <!-- EMAIL -->
+      <mat-form-field class="w-100" appearance="fill">
+        <mat-label>EMAIL</mat-label>
+        <input required type="text" matInput formControlName="email">
+        <mat-error *ngIf="login.controls['email'].hasError('required')">
+          <p ngxError="required">El email es requerido</p>
+        </mat-error>
+        <mat-error class="mb-3" *ngIf="login.controls['email'].hasError('maxlength')">
+          <p ngxError="required">Se paso la cantidad de caracteres admitidos</p>
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <div class="col-12 mb-3">
+      <!-- PASSWORD -->
+      <mat-form-field class="w-100" appearance="fill">
+        <mat-label>PASSWORD</mat-label>
+        <input required type="password" matInput formControlName="password">
+        <mat-error *ngIf="login.controls['password'].hasError('required')">
+          <p ngxError="required">La contraseña es requerido</p>
+        </mat-error>
+        <mat-error class="mb-3" *ngIf="login.controls['password'].hasError('maxlength')">
+          <p ngxError="required">Se paso la cantidad de caracteres admitidos</p>
+        </mat-error>
+      </mat-form-field>
+    </div>
+  </form>
+  <div class="col-12">
+    <button class="w-100" mat-raised-button color="primary" [disabled]="this.login.invalid" (click)="onLogin()">Iniciar
+      sesion</button>
+  </div>
+  <div class="col-12 mt-3">
+    <button class="w-100" mat-raised-button (click)="register()">Registrarme</button>
+  </div>
+</div>
